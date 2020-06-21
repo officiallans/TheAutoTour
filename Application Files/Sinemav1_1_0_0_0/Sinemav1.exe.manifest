@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Sinemav1.exe" version="1.0.0.0" publicKeyToken="ede8e3d21bb74d5e" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Sinemav1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Sinemav1.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Параметры манифеста UAC
+          Если нужно изменить уровень контроля учетных записей Windows, замените 
+          узел requestedExecutionLevel одним из следующих значений.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+        Если нужно использовать виртуализацию файлов и реестра для обратной
+             совместимости, удалите узел requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.ShockwaveFlashObjects.dll" size="18432">
+      <assemblyIdentity name="AxInterop.ShockwaveFlashObjects" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>zoAH1cGC1jh7cbz5sU7lNp+5l5ZEkhb62LwmC+MS4GY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.ShockwaveFlashObjects.dll" size="23040">
+      <assemblyIdentity name="Interop.ShockwaveFlashObjects" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>izDHRQZlTZNYcfj9Mlz8ogDSvxUtg8dNi/CqSidg0ek=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sinemav1.exe" size="2724320">
+      <assemblyIdentity name="Sinemav1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>nqTD5Pyt96SrsGRvCh1TZEw6JoVQ9wzvYbDVd2o89P8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Database1.mdf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FVM46HRFjqFo2WmFEQHlsg7xYM3mdODL/NuZN1m1oIQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Database1_log.ldf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RPBtb9/18uAdZcMAd3fxZiw9uF/QKGkCoIAQHQb3HOo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sinemav1.exe.config" size="781">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JpH2Elh4atkGTDwzeUYboo42dD50mPZ8THwQosAWoH4=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-11N2C8T\admin" issuerKeyHash="e26af3e765f0d6f1feaae9b28bc8dcd4a121f2f0" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>WUOwrruxq7u9axanlnnI3FKwOIVpT7rrGjPAA2e3uRA=</DigestValue></Reference></SignedInfo><SignatureValue>OGQ59i7cftiiZ8qJMwtQUCMaJsJRqINKaLCr9y6TdbSj5UVyHRSInQh/qFk14X9Mfw164Pvd1FFfH43x892IBE6y/kSV9yP0nDleeesGUivIN5tLBGAyyXgiNqbtO8wvVfKPOKKOpWw2emkf479MuS3LZmF2CnWdWoxe+oT1lQ8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>qQe9CfWeYByX2OMyn+3bba2/CDTeP4HDxf7/vtoQVBoq60LP9ndB80GpOoQN+JhPW8oZD6b9F1/gQdclEvgV4Mdy4eQPiGoaWagZ/DNbmJvSFs/2tBIlo9b3FCLMN43lSMUxaceikCT4/Y9cNwoJlRbUbgpemsumbGaNyeW0Wr0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="10b9b76703c0331aebba4f698538b052dcc87996a7166bbdbbabb1bbaeb04359" Description="" Url=""><as:assemblyIdentity name="Sinemav1.exe" version="1.0.0.0" publicKeyToken="ede8e3d21bb74d5e" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-11N2C8T\admin</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>gZKQ8fwsooFOuSdSM+abXUdpwjTiKpflKCelyotuFT0=</DigestValue></Reference></SignedInfo><SignatureValue>fXYFWH/6jDnBcnHCML1LxMEcx6jz0tolBW05bviOFtal4DpUFj0nIlBG/7jDH9jTzVZkmq15Ax61oiRUnTexgqU7e0cUGdfRyOD13ucQ8ccrAtaE65K9802oOu8+8njsfr+ogVKYhQnxcRA6FMrVlABpclOVi4XKo8FF4tx4TkM=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>qQe9CfWeYByX2OMyn+3bba2/CDTeP4HDxf7/vtoQVBoq60LP9ndB80GpOoQN+JhPW8oZD6b9F1/gQdclEvgV4Mdy4eQPiGoaWagZ/DNbmJvSFs/2tBIlo9b3FCLMN43lSMUxaceikCT4/Y9cNwoJlRbUbgpemsumbGaNyeW0Wr0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQQlzsx1kVA7JH+TJHMo8rJDANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtADEAMQBOADIAQwA4AFQAXABhAGQAbQBpAG4wHhcNMjAwNjIxMTE0OTQ1WhcNMjEwNjIxMTc0OTQ1WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtADEAMQBOADIAQwA4AFQAXABhAGQAbQBpAG4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKkHvQn1nmAcl9jjMp/t222tvwg03j+Bw8X+/77aEFQaKutCz/Z3QfNBqTqEDfiYT1vKGQ+m/Rdf4EHXJRL4FeDHcuHkD4hqGlmoGfwzW5ib0hbP9rQSJaPW9xQizDeN5UjFMWnHopAk+P2PXDcKCZUW1G4KXprLpmxmjcnltFq9AgMBAAEwDQYJKoZIhvcNAQELBQADgYEADS21Kl2SgxT/zx18zzXySQyk7bO73587xYmsZMjAsafPsrYs0J++w55QKE74Fma+cHR+yValn9LK8K3tfu1e0qMNHPfbIZRKhcCD4fQ9m9MgjhiuErlvvlX7DKlay4vhpv0YKGFu8fY9MZ8fXrsffJsoh2NEBmM8TFbG6pgZb7o=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
